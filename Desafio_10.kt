@@ -22,7 +22,7 @@ fun Fibonacci(n: Int) {
     }
 
     for (i in 3..n) {
-        val nextTerm = t1 + t2
+        val proximoTermo = t1 + t2
         print(" >> $nextTerm")
         t1 = t2
         t2 = nextTerm
