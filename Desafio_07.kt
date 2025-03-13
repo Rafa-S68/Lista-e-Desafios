@@ -1,15 +1,15 @@
 fun main() {
     print("Digite o primeiro termo da PA: ")
-    val primeiroTermo = readLine()?.toIntOrNull() ?: return
+    val Termo1 = readLine()?.toInt() ?: return
 
     print("Digite a razão da PA: ")
-    val razao = readLine()?.toIntOrNull() ?: return
+    val r = readLine()?.toInt() ?: return
 
     var soma = 0
 
     println("\nOs 10 primeiros termos da PA são:")
     for (i in 0 until 10) {
-        val termo = primeiroTermo + i * razao
+        val termo = Termo1 + i * r
         print("$termo ")
         soma += termo
     }
