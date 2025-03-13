@@ -3,7 +3,7 @@ fun main() {
     var t1 = 0
     var t2 = 1
 
-    println("Os primeiros $n elementos da sequência de Fibonacci são:")
+    println("Os $n elementos da sequência de Fibonacci são:")
 
     for (i in 1..n) {
         println(t1)
