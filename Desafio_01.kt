@@ -1,19 +1,18 @@
 /** DESAFIO 01
  */
 fun main() {
+
     print("Quantos cigarros você fuma por dia? ")
-    val cigarrosPorDia = readLine()?.toIntOrNull() ?: return
+    val cigarrosPorDia = readln().toDouble()
 
     print("Há quantos anos você fuma? ")
-    val anosFumando = readLine()?.toIntOrNull() ?: return
+    val qtdAnos = readln().toDouble()
 
-    val minutosPerdidosPorCigarro = 10									
-    val diasPorAno = 365
-    val minutosPorDia = 1440
+    val total = cigarosPorDia * (qtdAnos * 365)
+    val minutos = total * 10
+    val diasPerdidos = minutos / (24 * 60)
 
-    val totalCigarros = cigarrosPorDia * anosFumando * diasPorAno
-    val totalMinutosPerdidos = totalCigarros * minutosPerdidosPorCigarro
-    val diasPerdidos = totalMinutosPerdidos / minutosPorDia
+    val diasPerdidosFormat = String.format("%.0f", diasPerdidos)
 
     println("Você perdeu aproximadamente $diasPerdidos dias de vida devido ao fumo.")
 }
