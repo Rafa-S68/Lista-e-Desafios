@@ -1,3 +1,6 @@
 # Lista-e-Desafios
 
-Neste repositório está a Lista de desafios em Kotlin
+Lista de desafios em Kotlin
+
+Nome: Rafaela Santos Rodrigues
+Turma: SI2A Noite
